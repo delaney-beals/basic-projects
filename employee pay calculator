@@ -1,7 +1,9 @@
+#Choose whether workplace offers overtime for any hours worked over 40; displays pay in dollars. 
+
 print("Welcome to the Employee Store!")
 choice=input("Does your workplace compensate extra (1.5x pay) for overtime?\n")
 if choice=='yes' or choice=='YES' or choice=='Yes' or choice=='y' or choice=='Y':
-    print("Great!")  #how to proceed to part after "try"??
+    print("Great!")  
 
 elif choice=='no' or choice=='NO' or choice=='No' or choice=='n' or choice=='N':
     print ('Bummer!')
