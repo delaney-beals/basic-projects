@@ -7,12 +7,15 @@ if choice=='yes' or choice=='YES' or choice=='Yes' or choice=='y' or choice=='Y'
 
 elif choice=='no' or choice=='NO' or choice=='No' or choice=='n' or choice=='N':
     print ('Bummer!')
-    inp = input('Enter hours: ')
-    hours = float(inp)
-    prompt2 = input('Enter rate: ')
-    rate = float(prompt2)
-    pay = float(hours * rate)
-    print('Pay: ${:.2f}'.format(pay))
+    try:
+        inp = input('Enter hours: ')
+        hours = float(inp)
+        prompt2 = input('Enter rate: ')
+        rate = float(prompt2)
+        pay = float(hours * rate)
+        print('Pay: ${:.2f}'.format(pay))
+    except:
+        print ('Please enter a digit.')
     exit()
 else:
     print ('Run program again and enter yes or no.')
